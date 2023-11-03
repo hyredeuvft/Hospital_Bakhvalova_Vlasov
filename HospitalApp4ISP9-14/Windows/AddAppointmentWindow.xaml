@@ -1,0 +1,51 @@
+﻿<Window x:Class="HospitalApp4ISP9_14.Windows.AddAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalApp4ISP9_14.Windows"
+        mc:Ignorable="d"
+        Title="AddAppointmentWindow" Height="450" Width="800">
+    <Grid Background="#b3e7fd">
+        <StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button x:Name="btnExit" 
+                        Click="btnExit_Click"
+                        Content="🚪" 
+                        Width="80"
+                        Height="50"
+                        FontSize="16"
+                        Style="{DynamicResource ButtonStyle1}"/>
+                
+                <Label Content="ЗАПИСАТЬСЯ НА УСЛУГУ"
+                       Style="{StaticResource lbStyle}"/>
+            </WrapPanel>
+            
+            <DatePicker x:Name="dpDate"
+                        Style="{StaticResource DatePickerStyle1}"/>
+            
+            <ComboBox x:Name="cmbEmployee"
+                      Height="30"
+                      Width="300"
+                      Margin="15"/>
+            
+            <ComboBox x:Name="cmbMedService"
+                      Height="30"
+                      Width="300"
+                      Margin="15"/>
+            
+            <WrapPanel HorizontalAlignment="Center">
+                
+                <Button x:Name="btnBack" 
+                        Content="НАЗАД"
+                        Style="{StaticResource ButtonStyle1}"
+                        Click="btnBack_Click"/>
+                
+                <Button x:Name="btnSave" 
+                        Content="ЗАПИСАТЬСЯ" 
+                        Click="btnSave_Click"
+                        Style="{StaticResource ButtonStyle1}"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

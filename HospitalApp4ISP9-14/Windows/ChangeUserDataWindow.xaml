@@ -1,0 +1,83 @@
+﻿<Window x:Class="HospitalApp4ISP9_14.Windows.ChangeUserDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalApp4ISP9_14.Windows"
+        mc:Ignorable="d"
+        Title="ChangeUserDataWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#b3e7fd">
+        <StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Content="🚪" 
+                        HorizontalAlignment="Left"
+                        x:Name="btnExit" 
+                        Click="btnExit_Click"
+                        Width="80"
+                        Height="50"
+                        FontSize="16"
+                        Style="{DynamicResource ButtonStyle1}"/>
+                <Label Content="ИЗМЕНЕНИЕ" Style="{StaticResource lbStyle}"/>
+            </WrapPanel>
+            
+            <StackPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Фио: " 
+                               Style="{StaticResource txtStyle}"/>
+                    <TextBox x:Name="tbFIO"
+                             Style="{StaticResource TextBoxStyle1}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Дата рождения: "
+                               Style="{StaticResource txtStyle}"/>
+                    <DatePicker x:Name="dpDate"
+                                Style="{StaticResource DatePickerStyle1}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Телефон: "
+                               Style="{StaticResource txtStyle}"/>
+                    <TextBox x:Name="tbPhone"
+                             Style="{StaticResource TextBoxStyle1}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Пол: "
+                               Style="{StaticResource txtStyle}"/>
+                    <RadioButton GroupName="Gender" 
+                                    Content="Мужской" 
+                                    x:Name="rbMale"
+                                    Margin="10"
+                                    Style="{StaticResource rbStyle}"/>
+
+                    <RadioButton GroupName="Gender" 
+                                 Content="Женский" 
+                                 x:Name="rbFemale"
+                                 Style="{StaticResource rbStyle}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Адрес: "
+                               Style="{StaticResource txtStyle}"/>
+                    <TextBox x:Name="tbAddress"
+                             Style="{StaticResource TextBoxStyle1}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBlock Text="Почта: "
+                               Style="{StaticResource txtStyle}"/>
+                    <TextBox x:Name="tbEmail"
+                             Style="{StaticResource TextBoxStyle1}"/>
+                </WrapPanel>
+            </StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button x:Name="btnBack" 
+                        Content="НАЗАД" 
+                        Click="btnBack_Click"
+                        Style="{StaticResource ButtonStyle1}"/>
+                
+                <Button x:Name="btnSave" 
+                        Content="СОХРАНИТЬ" 
+                        Click="btnSave_Click"
+                        Style="{StaticResource ButtonStyle1}"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="HospitalApp4ISP9_14.Windows.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalApp4ISP9_14.Windows"
+        mc:Ignorable="d"
+        Title="AuthWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#b3e7fd">
+        
+        <StackPanel Background="#48c2f7" 
+                    HorizontalAlignment="Center" 
+                    Width="350"
+                    Height="240"
+                    VerticalAlignment="Center">
+            
+            <Label Content="ВХОД" 
+                   Style="{StaticResource lbStyle}"/>
+            
+            <TextBox Style="{DynamicResource TextBoxStyle1}" 
+                     x:Name="tbLogin"/>
+            
+            <PasswordBox Template="{DynamicResource PasswordBoxTemplate1}" 
+                         x:Name="pbPassword"/>
+
+            <Button Content="Войти" 
+                        x:Name="btnEnter" 
+                        Click="btnEnter_Click"
+                        Style="{DynamicResource ButtonStyle1}"/>
+
+            <Button Style="{DynamicResource ButtonStyle1}" 
+                        Content="Зарегистрироваться" 
+                        x:Name="btnReg"
+                        Click="btnReg_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

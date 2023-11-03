@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a63e334aae94ce1b430d5e8bb677563" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Appointment" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Departament" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Diagnosis" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Gender" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MedicalService" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Order" Width="1.5" PointX="7.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Patient" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientDiagnosis" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Post" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TagOfPatient" Width="1.5" PointX="7.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VW_InfoPation" Width="1.5" PointX="9.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VW_InfoPation2" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VW_InfoService" Width="1.5" PointX="9.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VW_InfoService2" Width="1.5" PointX="9.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VW_InfoService3" Width="1.5" PointX="11.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Appointment_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Appointment_MedicalService" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Order_Appointment" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PatientDiagnosis_Diagnosis" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Patient_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Order_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PatientDiagnosis_Patient" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.VW_AppointmentFuture" Width="2.125" PointX="12.375" PointY="3.75" />
+        <AssociationConnector Association="Model.FK_Order_Appointment1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
